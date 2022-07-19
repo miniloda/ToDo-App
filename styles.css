@@ -1,9 +1,14 @@
 @import "font-awesome";
+* {
+    box-sizing: border-box;
+  }
 body{
-    background-color: #d46d6d;
+    background-image: url("src/img/body.svg");
     /* display: flex;
     justify-content: center;
     flex-direction: column; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
 .todo{
     position: fixed;
@@ -12,7 +17,7 @@ body{
     transform: translate(-50%, -50%);
     width: 300px;
     height: 600px;
-    background-color: rgb(231, 179, 205);
+    background-color: rgba(255, 255, 255, 0.5);
 
 }
 .header{
@@ -34,9 +39,44 @@ body{
 }
 #rounded{
     color: #2A872A;;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     position: absolute;
-    top: 185px;
-    right: 30px;
+    top: 220px;
+    right: 40px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /*makethelistitemsunselectable*/-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    margin-top: 10px;
+}
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+  }
+
+input{
+    width: 100%;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
