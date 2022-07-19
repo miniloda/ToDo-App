@@ -1,0 +1,42 @@
+@import "font-awesome";
+body{
+    background-color: #d46d6d;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+.todo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 600px;
+    background-color: rgb(231, 179, 205);
+
+}
+.header{
+    background-image: url("src/img/background.jpg");
+    width : 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: calc(100% - 200px - 20px);
+    margin: 10px 40px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+
+}
+#rounded{
+    color: #2A872A;;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 185px;
+    right: 30px;
+}
